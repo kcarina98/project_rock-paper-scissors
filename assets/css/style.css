@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  background-image: url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80");
+  height: 100vh;
+}
+
+.rounds {
+  padding: 50px 0 0 50px;
+  color: white;
+}
+
+#you {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: fixed;
+  top: 27%;
+  left: 30%;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.you {
+  position: fixed;
+  left: 31%;
+  top: 24%;
+  color: rgb(128, 215, 243);
+  font-size: 1rem;
+}
+
+.computer {
+  position: fixed;
+  right: 31%;
+  top: 24%;
+  color: white;
+  font-size: 1rem;
+}
+
+#computer {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: fixed;
+  top: 27%;
+  right: 30%;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+#input-name {
+  width: 180px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+input {
+  height: 15px;
+  width: 15px;
+}
+
+label {
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+
+.button {
+  width: 40%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: rgb(238, 235, 235);
+  margin-right: 20px;
+  font-size: 5rem;
+  width: 30%;
+  background-color: rgba(92, 137, 165, 0.094);
+}
+
+button:hover {
+  background-color: rgba(173, 216, 230, 0.287);
+  transition: 0.5s;
+}
+
+#punktestand {
+  font-size: 8rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.win-lose {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+a:hover {
+  background-color: rgba(173, 216, 230, 0.287);
+  transition: 0.5s;
+}
+
+/*# winner */
+
+.winner {
+  background-color: rgb(0, 68, 0);
+  color: white;
+}
+
+.winner h1 {
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.winner h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.winner div p {
+  font-size: 10rem;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* # loser */
+
+.loser {
+  background-color: rgb(81, 13, 1);
+  color: white;
+}
+
+.loser h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.loser h2 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.loser div p {
+  font-size: 10rem;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* # draw */
+
+.draw {
+  background-color: rgb(2, 57, 75);
+  color: white;
+}
+
+.draw h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.draw h2 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.draw div p {
+  font-size: 10rem;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.try:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}

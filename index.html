@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schere, Stein, Papier</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <!-- - Runden -->
+        <form onsubmit="return false" class="rounds">
+          <h2>What's your name?</h2>
+          <input
+            type="text"
+            required
+            id="input-name"
+            placeholder="max. 8 letters"
+            maxlength="8"
+          />
+          <h2>How many rounds?</h2>
+          <input type="radio" id="fünf" name="auswahl" checked />
+          <label for="fünf">5</label>
+          <input type="radio" id="zehn" name="auswahl" />
+          <label for="zehn">10</label>
+          <input type="radio" id="fünfzehn" name="auswahl" />
+          <label for="fünfzehn">15</label>
+          <input type="radio" id="zwanzig" name="auswahl" />
+          <label for="zwanzig">20</label>
+        </form>
+
+        <div id="computer"></div>
+        <p class="computer">Computer</p>
+        <div id="you"></div>
+        <p class="you"></p>
+        <!-- - Punktestand -->
+        <div>
+          <p id="punktestand"></p>
+        </div>
+
+        <!-- - Auwahl Schere, Stein, Papier -->
+
+        <form onsubmit="return false" class="button">
+          <button id="schere" onclick="clicks()" class="clicks">✄</button>
+          <button id="stein" onclick="clicks()" class="clicks">🪨</button>
+          <button id="papier" onclick="clicks()" class="clicks">📄</button>
+        </form>
+
+        <!-- - Win oder lose? -->
+        <p class="win-lose"></p>
+
+        <!-- - restart -->
+        <a href="javascript:location.reload()">restart</a>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
